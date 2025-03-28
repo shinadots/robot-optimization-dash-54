@@ -1,5 +1,5 @@
 
-import { ChartBar, FileSpreadsheet, Calendar, Settings, RefreshCcw, LineChart } from "lucide-react";
+import { ChartBar, FileSpreadsheet, Calendar, Settings, RefreshCcw, LineChart, LogOut } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -71,8 +71,16 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter className="p-4">
-        <div className="text-xs text-muted-foreground">
-          Dinastia Aulas © {new Date().getFullYear()}
+        <div className="flex flex-col space-y-4">
+          <SidebarMenuButton asChild>
+            <Link to="/login" className="flex items-center gap-3 text-muted-foreground">
+              <LogOut className="h-5 w-5" />
+              <span>Sair</span>
+            </Link>
+          </SidebarMenuButton>
+          <div className="text-xs text-muted-foreground">
+            Dinastia Netsar © {new Date().getFullYear()}
+          </div>
         </div>
       </SidebarFooter>
     </Sidebar>
