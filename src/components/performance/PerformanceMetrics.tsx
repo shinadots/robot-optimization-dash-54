@@ -152,37 +152,37 @@ export function PerformanceMetrics() {
 
   return (
     <div className="mb-6">
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="mb-4">
+      <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="engagement">Engajamento</TabsTrigger>
           <TabsTrigger value="cost">Custos</TabsTrigger>
           <TabsTrigger value="conversion">Conversões</TabsTrigger>
         </TabsList>
+        
+        <TabsContent value="engagement">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            {engagementMetrics.map((metric, index) => (
+              <MetricCard key={index} {...metric} />
+            ))}
+          </div>
+        </TabsContent>
+        
+        <TabsContent value="cost">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            {costMetrics.map((metric, index) => (
+              <MetricCard key={index} {...metric} />
+            ))}
+          </div>
+        </TabsContent>
+        
+        <TabsContent value="conversion">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            {conversionMetrics.map((metric, index) => (
+              <MetricCard key={index} {...metric} />
+            ))}
+          </div>
+        </TabsContent>
       </Tabs>
-      
-      <TabsContent value="engagement" className="mt-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {engagementMetrics.map((metric, index) => (
-            <MetricCard key={index} {...metric} />
-          ))}
-        </div>
-      </TabsContent>
-      
-      <TabsContent value="cost" className="mt-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {costMetrics.map((metric, index) => (
-            <MetricCard key={index} {...metric} />
-          ))}
-        </div>
-      </TabsContent>
-      
-      <TabsContent value="conversion" className="mt-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {conversionMetrics.map((metric, index) => (
-            <MetricCard key={index} {...metric} />
-          ))}
-        </div>
-      </TabsContent>
     </div>
   );
 }
