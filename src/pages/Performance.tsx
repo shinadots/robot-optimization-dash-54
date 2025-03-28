@@ -7,6 +7,7 @@ import { CreativeInsights } from "@/components/performance/CreativeInsights";
 import { PerformanceChart } from "@/components/performance/PerformanceChart";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
+import { PerformanceMetrics } from "@/components/performance/PerformanceMetrics";
 
 const Performance = () => {
   return (
@@ -56,43 +57,7 @@ const Performance = () => {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base font-medium">CTR Médio</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex justify-between items-end">
-              <div className="text-3xl font-bold">3.8%</div>
-              <Badge className="bg-green-100 text-green-800 hover:bg-green-100">+0.6%</Badge>
-            </div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base font-medium">Custo por Resultado</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex justify-between items-end">
-              <div className="text-3xl font-bold">R$ 12,50</div>
-              <Badge className="bg-red-100 text-red-800 hover:bg-red-100">+R$ 1,20</Badge>
-            </div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base font-medium">Taxa de Conversão</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex justify-between items-end">
-              <div className="text-3xl font-bold">8.2%</div>
-              <Badge className="bg-green-100 text-green-800 hover:bg-green-100">+1.4%</Badge>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+      <PerformanceMetrics />
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <Card className="lg:col-span-2">
