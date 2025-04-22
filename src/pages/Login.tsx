@@ -58,7 +58,7 @@ export default function Login() {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
-            Entre com suas credenciais para acessar o DinaRobô
+            Entre com suas credenciais para acessar o BLRobô
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
