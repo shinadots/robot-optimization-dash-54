@@ -27,7 +27,7 @@ export function AppSidebar() {
       <SidebarHeader className="p-4">
         <div className="flex items-center gap-2">
           <RefreshCcw className="h-6 w-6 text-dinastia-600" />
-          <span className="font-bold text-lg">Dinastia</span>
+          <span className="font-bold text-lg">BL</span>
         </div>
       </SidebarHeader>
       <SidebarContent>
@@ -56,7 +56,7 @@ export function AppSidebar() {
             </Link>
           </SidebarMenuButton>
           <div className="text-xs text-muted-foreground">
-            Dinastia Netsar © {new Date().getFullYear()}
+            BL Company © {new Date().getFullYear()}
           </div>
         </div>
       </SidebarFooter>

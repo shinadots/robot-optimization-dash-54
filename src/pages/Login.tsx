@@ -51,7 +51,7 @@ export default function Login() {
         <div className="w-10 h-10 rounded-full bg-dinastia-100 flex items-center justify-center">
           <span className="font-medium text-dinastia-600">DN</span>
         </div>
-        <h1 className="text-2xl font-bold">Dinastia Netsar</h1>
+        <h1 className="text-2xl font-bold">Testando</h1>
       </div>
       
       <Card className="w-full max-w-md">

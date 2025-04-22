@@ -407,17 +407,17 @@ const Settings = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="user-name">Nome Completo</Label>
-                  <Input id="user-name" defaultValue="Usuário Dinastia" />
+                  <Input id="user-name" defaultValue="Usuário" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="user-email">Email</Label>
-                  <Input id="user-email" type="email" defaultValue="usuario@dinastia.com" />
+                  <Input id="user-email" type="email" defaultValue="usuario@blcompany.com" />
                 </div>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="user-company">Empresa</Label>
-                <Input id="user-company" defaultValue="Dinastia Aulas" />
+                <Input id="user-company" defaultValue="BL Comapny" />
               </div>
               
               <div className="space-y-4 pt-4">
