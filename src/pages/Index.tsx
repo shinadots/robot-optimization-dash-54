@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <DashboardLayout>
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-2">Teste Dash Bl</h1>
         <p className="text-muted-foreground">
           Visão geral da performance das suas campanhas e robôs
         </p>

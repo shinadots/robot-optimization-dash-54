@@ -17,7 +17,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <header className="h-16 border-b border-border flex items-center px-6 sticky top-0 bg-background/95 backdrop-blur-sm z-10">
             <SidebarTrigger />
             <div className="ml-4 flex-1">
-              <h1 className="text-xl font-bold">Dinastia Netsar</h1>
+              <h1 className="text-xl font-bold">Teste Dash Bl</h1>
             </div>
             <div className="flex items-center gap-4">
               <ThemeToggle />
